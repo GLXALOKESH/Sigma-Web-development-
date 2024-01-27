@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <h1>This is a sample form</h1>
+    <form action="post">
+        <div>
+            <label for="username">Enter your username Here</label>
+            <input type="text" name="username" id="username" placeholder="username">
+        </div>
+        <div>
+            <label for="password">Enter your password Here</label>
+            <input type="password" name="password" id="password" placeholder="password here
+            ">
+        </div>
+        <div>
+            <input type="checkbox" name="terms and conditions" id="tc" value="yes"><label for="tc">I agree</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" value="male" id="male"><label for="male">male</label>
+            <input type="radio" name="gender" value="female" id="female"><label for="female">female</label>
+        </div>
+        <div>
+            <button type="button">type button</button>
+            <button type="menu">type menu</button>
+            <button type="reset">type reset</button>
+        </div>
+        <div>
+            <label for="fruits">select any one </label>
+            <select name="fruits" id="fruits">
+                <option value="orange">orange</option>
+                <option value="banana">Banana</option>
+                <option value="suger cane">suger cane</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="description" id="description" cols="40" rows="5"
+                placeholder="Enter your comment Here"></textarea>
+        </div>
+        <div>
+            <input type="file" name="fileupload" id="file" value="pdf">
+        </div>
+        <div>
+            <input type="range" name="volume" id="volume" min="0" max="10">
+        </div>
+        <div>
+            <label for="number">Enter your number here:</label>
+            <input type="number" name="number" id="number" min="1" max="10">
+        </div>
+        <div>
+            <input type="email" name="email" id="email" placeholder="Enter your email here">
+        </div>
+        <div>
+            <input type="search" name="quary" id="search">
+        </div>
+        <div>
+            <label for="website">Enter the url here</label>
+            <input type="url" name="website" id="website" placeholder="https:\\www.yoururl.com">
+        </div>
+        <div>
+            <label for="bd">Enter your birthdate Here</label>
+            <input type="date" name="birthdate" id="bd">
+        </div>
+        <div>
+            <input type="submit" name="submit" id="submit" value="submit">
+        </div>
+    </form>
+</body>
+
+</html>
