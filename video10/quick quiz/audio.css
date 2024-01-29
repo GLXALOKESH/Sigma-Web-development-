@@ -1,0 +1,21 @@
+div {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+  }
+
+  .font{
+    color: antiquewhite;
+    font-style: bold;
+    font-size: large;
+    background-color: rgb(28, 3, 3);
+  }
+  .heading{
+    
+        color: antiquewhite;
+        font-style: bold;
+    background-color: rgb(28, 3, 3);
+
+      
+  }
