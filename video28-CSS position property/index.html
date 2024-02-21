@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position property</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            margin: 50px  auto;
+            padding: 20px;
+            width: 70vw;
+            box-sizing: border-box;
+            border: 3px solid black;
+        }
+        .box{
+            height: 300px;
+            margin: 50px auto;
+            width: 100%;
+            border: 2px solid blue;
+            box-sizing: border-box;
+
+
+        }
+        .nav{
+            background-color: green;
+            position: sticky;
+            top: 0px;
+            height: 100px;
+            width: 100%;
+            margin: 0px 0px;
+            z-index: 5;
+        }
+        .ad{
+            background-color: gold;
+            position: fixed;
+            height: 15vh;
+            width: 90vw;
+            bottom: 0vh;
+            left: 5vw;
+            border: 5px solid black;
+            box-sizing: border-box;
+            z-index: 5;
+        }
+        .absolute{
+            position: absolute;
+            top: 50%;
+            background-color: rgba(0, 255, 255, 0.425);
+            z-index: 1;
+        }
+        .relative{
+            position: relative;
+            background-color: rgba(255, 255, 0, 0.76);
+            z-index: 0;
+        }
+        .static
+        {
+            background-color: pink;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div  class="parent">
+        <nav class="box nav"></nav>
+        <div class=" ad"></div>
+        <div class="box absolute "></div>
+        <div class="box relative"></div>
+        <div class="box static"></div>
+    </div>
+</body>
+</html>
