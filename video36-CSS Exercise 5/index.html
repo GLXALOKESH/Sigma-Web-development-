@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+        <style>
+            :root{
+                --logoheigth: 10vw;
+                --logowidth: 10vw;
+                --logobr: 50vw;
+            }
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-color: #2e2e2e;
+            }
+            nav{
+                background-color: black;
+                padding: 15px;
+                font-family: 'poppins', sans-serif;
+                position: sticky;
+                top: 0;
+            }
+            nav ul{
+                list-style: none;
+            }
+            nav ul li{
+                display: inline;
+                padding: 1%;
+                font-size: 15px;
+                font-weight: bolder;
+
+            }
+            .home{
+                margin-right: 67%;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: white;
+            }
+            nav ul li a:hover{
+                color: yellow;
+            }
+            .container{
+                max-width: 98vw;
+                height: 88vh;
+                background-color: silver;
+                margin: 0px 1vw;
+                margin-top: 10px;
+                
+            }
+            .cards{
+                background-color: rgb(0, 0, 0);
+                width: 30%;
+                height: 80%;
+                display: inline-block;
+                margin-top: 9vh;
+                margin-left: 13%;
+            }
+            .cards:hover{
+                box-shadow: 0px 0px 20px 5px rgb(55, 0, 255);
+                outline: 1px solid gold;
+
+            }
+            .logo{
+                height: var(--logoheigth);
+                width: var(--logowidth);
+                border-radius: var(--logobr);
+                overflow: hidden;
+                position: fixed;
+                bottom: 1vw;
+                right: 1vw;
+                outline: 1px solid gold;
+
+            }
+            .logo img{
+                height: var(--logoheigth);
+                width: var(--logowidth);
+                border-radius: var(--logobr);
+                position: absolute;
+                outline: 1px solid gold;
+            }
+            .button{
+                background-color: silver;
+                height: 30vh;
+                width: 80vw;
+                border-radius:5vw;
+                margin: 30px auto;
+                box-sizing: border-box;
+                /* padding: 8%; */
+                display: grid;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                border: 2px solid black;
+                cursor: pointer;
+
+
+            }
+
+            .button p{
+                font-family: 'kode mono',sans-serif;
+                font-size: 300%;
+                font-weight: 700;
+                color: rgb(0, 0, 0);
+            }
+            .button:hover{
+                background-color: #A38A00;
+                box-shadow: 0px 0px 10px 3px white;
+            }
+            .button:hover p{
+                color: rgb(214, 8, 8);
+            }
+            footer{
+                height: 20vh;
+                background-color: black;
+            }
+            
+        </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="home"><a href="/">HOME</a></li>
+            <li class="Log in"><a href="/">Log in</a></li>
+            <li class="Sign Up"><a href="/">Sign Up</a></li>
+            <li class="Contact Us"><a href="/">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="cards card1"></div>
+        <div class="cards card2"></div>
+    </div>
+    <div class="logo">
+        <img  src="https://images-workbench.99static.com/Sh-coCutd_RTGXnvNBS8PB4om-w=/99designs-contests-attachments/52/52207/attachment_52207796" alt="logo">
+    </div>
+    <div class="button">
+        <p>Welcome to my website</p>
+    </div>
+    <footer></footer>
+
+</body>
+</html>
