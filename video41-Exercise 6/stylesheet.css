@@ -119,17 +119,19 @@ header div img {
     color: white;
 }
 
+/* <----main content ----> */
+
 main {
-    /* background-color: yellow; */
     height: 1500px;
 
 }
 
+/* <----heading bar in main ----> */
+
 .heading2 {
     display: flex;
     font-family: 'poppins', sans-serif;
-    /* background-color: red; */
-    height: 100px;
+    height: 80px;
 }
 
 .heading2 img {
@@ -152,10 +154,12 @@ main {
     color: rgba(0, 0, 0, 0.850);
 }
 
+/* <----Cards----> */
+
 .cards {
-    background-color: red;
-    height: 95%;
-    padding-left: 80px;
+    /* background-color: red; */
+    height: 70%;
+    /* padding-left: 10px; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -164,7 +168,60 @@ main {
 }
 
 .card {
-    height: 80%;
-    width: 65%;
+    height: 90%;
+    width: 60%;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: 'roboto',sans-serif;
+}
+.lang{
+margin-top: 20%;
+font-size: 20px;
+font-weight: bolder;
+color: rgba(0, 0, 0, 0.900);
+}
+.lang-name{
+margin-top: 10px;
+margin-bottom: 25px;
+font-size: 12px;
+color: rgba(0, 0, 0, 0.800);
+
+}
+.download1{
+height: 38px;
+width: 67%;
+background-color: #00B6D1;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+font-size: 12px;
+color: white;
+font-weight: bolder;
+cursor: pointer;
+}
+.download1:hover{
+    background-color: #04a4bd;
+}
+.download2{
+    height: 38px;
+    width: 67%;
+    background-color: #5CB85C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 10px;
+color: white;
+font-weight: bolder;
+
+cursor: pointer;
+
+}
+.download2:hover{
+    background-color: #4c994c;
 }
