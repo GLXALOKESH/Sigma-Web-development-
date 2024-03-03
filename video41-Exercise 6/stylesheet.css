@@ -118,12 +118,15 @@ header div img {
     font-size: 15px;
     color: white;
 }
+.button1 a{
+    text-decoration: none;
+}
 
 /* <----main content ----> */
 
 main {
-    height: 1500px;
-
+    height: 1200px;
+/* background-color: red; */
 }
 
 /* <----heading bar in main ----> */
@@ -158,13 +161,14 @@ main {
 
 .cards {
     /* background-color: red; */
-    height: 70%;
+    height: 92%;
     /* padding-left: 10px; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
+    /* background-color: yellow; */
 }
 
 .card {
@@ -202,13 +206,15 @@ font-size: 12px;
 color: white;
 font-weight: bolder;
 cursor: pointer;
+text-decoration: none;
+
 }
 .download1:hover{
     background-color: #04a4bd;
 }
 .download2{
     height: 38px;
-    width: 67%;
+    width: 68%;
     background-color: #5CB85C;
     display: flex;
     justify-content: center;
@@ -224,4 +230,23 @@ cursor: pointer;
 }
 .download2:hover{
     background-color: #4c994c;
+}
+.download-link{
+  text-decoration: none;
+  color: white;
+}
+section{
+    background-color: rgb(34, 34, 34);
+    height: 670px;
+    /* margin: 50px; */
+    padding: 4%;
+    color: white;
+    display: flex;
+    box-sizing: border-box;
+}
+.section-container1{
+    background-color: red;
+    height: 350px;
+    width: 100%;
+
 }
