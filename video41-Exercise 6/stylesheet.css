@@ -239,14 +239,47 @@ section{
     background-color: rgb(34, 34, 34);
     height: 670px;
     /* margin: 50px; */
-    padding: 4%;
+    padding: 3%;
     color: white;
     display: flex;
     box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
 }
 .section-container1{
     background-color: red;
-    height: 350px;
+    min-height: 350px;
     width: 100%;
-
+display: flex;
+/* align-items:last baseline; */
+flex-wrap: wrap;
+}
+.section-container1 .text{
+background-color: blue;
+width: 460px;
+height: 80px;
+padding: 10px;
+text-align: center;
+margin-top: 130px;
+}
+.section-container1 .box{
+    width: 480px;
+    height: 350px;
+    background-color: green;
+    margin-left: auto;
+    padding: 1%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.section-container1 .box .inner-box{
+    background-color: white;
+    height: 90%;
+    width: 80%;
+    border-radius: 20px;
+    padding: 8%;
+    color: black;
+    box-sizing: border-box;
 }
