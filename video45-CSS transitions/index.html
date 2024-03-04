@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS transition</title>
+    <style>
+        .container{
+            height: 80vh;
+            width: 80vw;
+            margin: auto;
+            background-color: #222;
+            box-sizing: border-box;
+            padding: 50px;
+            position: relative; /* Add position relative */
+        }
+    
+        .tr{
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            background-color: #fff;
+            position: absolute; /* Add position absolute */
+            top: 50; /* Position at the top */
+            left: 40%; /* Position at the left */
+            transition: transform 2s ease-in-out; /* Move this here */
+
+        }
+        .container:hover .tr{
+            background-color: aqua;
+            transform: translateX(600px);
+
+        }
+        .container:hover .tr2{
+            transform: translateY(300px);
+
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="tr tr2"></div>
+    </div>
 </body>
 </html>
