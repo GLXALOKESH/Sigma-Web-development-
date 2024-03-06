@@ -13,9 +13,8 @@
             border-radius: 70px;
             position: absolute;
             bottom: 0;
-            left: 0; 
-            animation: drop 6s ease-in-out reverse ;
-            /* animation-play-state: running; */
+            left: 0;   
+            animation: animateX 3s linear infinite, animateY 1s ease-out infinite alternate;
         }
 
         .container {
@@ -23,46 +22,26 @@
             height: 80vh;
             width: 80vw;
             background-color: blue;
-           
+        }
 
+        @keyframes animateX {
+            from{
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+        }
+
+        @keyframes animateY {
+           from{
+                bottom: 0;
+            }
+            to{
+                bottom: 100% ;
+            }
         }
  
-        @keyframes drop {
-            0% {
-                transform: translateY(0) translateX(0);           
-            }
-
-            14.3% {
-                transform: translateY(-150px) translateX(100px);     
-             }
-
-            28.6% {
-                transform: translateY(0) translateX(200px);           
-              }
-
-            42.9% {
-                transform: translateY(-300px) translateX(300px); 
-            }
-
-            57.2% {
-                transform: translateY(0) translateX(400px);      
-                   }
-
-            71.5% {
-                transform: translateY(-350px) translateX(500px); 
-            }
-            
-            85.8% {
-                transform: translateY(0) translateX(600px); 
-                
-            }
-            100%{
-                transform: translateY(0) translateX(600px); 
-                animation-play-state: paused;
-            }
-        }
-
-
     </style>
 </head>
 
@@ -72,7 +51,7 @@
         <div class="box">
         </div>
     </div>
-    <!--    
+    <!-- 
    
      -->
 </body>
