@@ -11,18 +11,13 @@
 
 */
 
-const readline = require('readline');
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
 
 
 let random = Math.random();
-rl.question('Input the first number: ', (num1) => {
-    rl.question('Input your function (+, -, /, *): ', (func) => {
-      rl.question('Input the second number: ', (num2) => {
+let num1 = prompt("Enter your first number: ")
+let func = prompt("Enter the operation: ")
+let num2 = prompt("Enter your second number: ")
+
     num1 = parseFloat(num1);
     num2 = parseFloat(num2);
 
@@ -86,7 +81,3 @@ else{
 
     }   
 }
-rl.close();
-});
-});
-});
