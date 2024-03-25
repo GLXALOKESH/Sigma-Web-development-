@@ -46,6 +46,14 @@ function randnumgen(){
 }
 let ret = randnumgen()
 let retstr = ret.toString()
-console.log(retstr)
 let businessname = adjectives[retstr]
+ret = randnumgen()
+retstr = ret.toString()
+businessname = businessname+ shopname[retstr]
+ret = randnumgen()
+retstr = ret.toString()
+businessname = businessname+ Anotherword[retstr]
 console.log(businessname)
+
+
+
