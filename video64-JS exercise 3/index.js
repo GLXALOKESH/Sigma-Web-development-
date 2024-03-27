@@ -9,4 +9,5 @@ function mul(a,b){
 return (a*b)
 }
 let fact= numbers.reduce(mul)
-console.log(`factorial of ${itr} is ${fact}`)
+console.log(`factorial of ${itr} is ${fact}`);
+
