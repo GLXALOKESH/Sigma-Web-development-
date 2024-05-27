@@ -13,7 +13,7 @@ fs.writeFile("file1.txt", "this is file one",()=>{
 fs.appendFile("file1.txt","\t this is appended\t",(error,data)=>{
     console.log(error,data);
     
-})
+})  
 console.log("finished");
 
 
