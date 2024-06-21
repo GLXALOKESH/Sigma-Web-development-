@@ -1,0 +1,21 @@
+.navbar ul{
+    display: flex;
+    gap: 30px;
+}
+.navbar li{
+    list-style: none;
+    font-weight: 500;
+    font-family: sans-serif;
+    cursor: pointer;
+    user-select:none;
+}
+
+.navbar{
+    height: 50px;
+    width: 100%;
+    background-color: #34e08a;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
